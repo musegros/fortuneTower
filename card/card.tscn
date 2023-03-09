@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://cknrrj6a6m3wv"]
+
+[ext_resource type="Script" path="res://card/card.gd" id="1_ab05g"]
+[ext_resource type="Texture2D" uid="uid://d0jywq8038qct" path="res://card/cards.png" id="2_qya8v"]
+
+[node name="card" type="Node2D"]
+script = ExtResource("1_ab05g")
+metadata/_edit_group_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_qya8v")
+vframes = 9
+frame = 8
