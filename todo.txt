@@ -1,0 +1,13 @@
+get the game working
+	money tracker
+	detect loss, handle loss
+	cash out button
+	reshuffle after game ends
+	move safe guard when needed
+	continue until the end after cashout
+
+saving game
+main menu
+animations
+options
+sounds

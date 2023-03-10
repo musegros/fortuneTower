@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://d0jywq8038qct" path="res://card/cards.png" id="2_qya8v"]
 
 [node name="card" type="Node2D"]
+position = Vector2(1, 1)
 script = ExtResource("1_ab05g")
 metadata/_edit_group_ = true
 

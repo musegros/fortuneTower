@@ -13,7 +13,7 @@ _data = {
 [node name="table" type="Node2D"]
 script = ExtResource("1_t30un")
 
-[node name="Button" type="Button" parent="."]
+[node name="Button_deal_row" type="Button" parent="."]
 offset_left = 979.0
 offset_top = 544.0
 offset_right = 1116.0
@@ -25,4 +25,12 @@ libraries = {
 "": SubResource("AnimationLibrary_51uu4")
 }
 
-[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[node name="Button_Redeal" type="Button" parent="."]
+offset_left = 982.0
+offset_top = 438.0
+offset_right = 1098.0
+offset_bottom = 514.0
+text = "Redeal"
+
+[connection signal="pressed" from="Button_deal_row" to="." method="_on_button_deal_row_pressed"]
+[connection signal="pressed" from="Button_Redeal" to="." method="_on_button_redeal_pressed"]

@@ -16,7 +16,6 @@ func _process(delta):
 
 func set_card_value(value: int):
 	cardVal = value
-#	label.text = str(value)
 	sprite.frame = value
 
 
