@@ -1,14 +1,8 @@
 [gd_scene load_steps=4 format=3 uid="uid://bdout6hgfjlyj"]
 
 [ext_resource type="Script" path="res://table/table.gd" id="1_t30un"]
-
-[sub_resource type="Animation" id="Animation_n8anr"]
-resource_name = "deal_card"
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_51uu4"]
-_data = {
-"deal_card": SubResource("Animation_n8anr")
-}
+[ext_resource type="Script" path="res://table/Deck.gd" id="2_qb6rf"]
+[ext_resource type="Script" path="res://table/GameLogic.gd" id="3_a6yr2"]
 
 [node name="table" type="Node2D"]
 script = ExtResource("1_t30un")
@@ -20,17 +14,18 @@ offset_right = 1116.0
 offset_bottom = 616.0
 text = "Deal"
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_51uu4")
-}
-
 [node name="Button_Redeal" type="Button" parent="."]
 offset_left = 982.0
 offset_top = 438.0
 offset_right = 1098.0
 offset_bottom = 514.0
 text = "Redeal"
+
+[node name="Deck" type="Node" parent="."]
+script = ExtResource("2_qb6rf")
+
+[node name="GameLogic" type="Node" parent="."]
+script = ExtResource("3_a6yr2")
 
 [connection signal="pressed" from="Button_deal_row" to="." method="_on_button_deal_row_pressed"]
 [connection signal="pressed" from="Button_Redeal" to="." method="_on_button_redeal_pressed"]
